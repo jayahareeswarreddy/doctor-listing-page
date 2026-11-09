@@ -7,7 +7,6 @@ import useFilteredDoctors from "../hooks/useFilteredDoctors";
 
 const DoctorListPage = () => {
   const { doctors, filteredDoctors } = useFilteredDoctors();
-  console.log(filteredDoctors);
   return (
     <div className="p-4">
       <AutocompleteSearch doctors={doctors} />
